@@ -1,0 +1,81 @@
+:root {
+    --primary: #ffd195;
+    --dark: #164c64;
+    --darkest: #7abaad ;
+    --light: #fffff1;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    color: var(--primary);
+}
+
+.watch {
+    text-align: center;
+    background-color: var(--darkest);
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+}
+
+.time {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--light);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    background-color: var(--dark);
+}
+
+.hour {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
